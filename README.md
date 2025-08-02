@@ -1,15 +1,15 @@
 # BidRL Auction Watcher
 
-Searches all BidRL stores for matching auctions and emails results.
+Searches BidRL affiliate stores for auction listings matching keywords and sends alerts.
 
 ## Features
-- Keyword search across all stores
-- Image display (real only)
-- Bid amount, number of bids, time left, and close date
-- Email alerts to main and optional recipient
+- Dynamic store discovery
+- Prioritized stores
+- Daily scraping via GitHub Action (planned)
+- Streamlit app with manual refresh and email alerting
 
-## Streamlit Secrets Required
-```
+## Streamlit Secrets
+```toml
 [email]
 smtp_username = "your@gmail.com"
 smtp_password = "your-app-password"
