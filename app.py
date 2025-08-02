@@ -20,7 +20,7 @@ if run_button:
             for item in results:
                 cols = st.columns([1, 2])
                 if item["image"] and not item["image"].endswith("no_image.png"):
-                    cols[0].image(item["image"], use_column_width=True)
+                    cols[0].image(item["image"], use_container_width=True)
                 else:
                     cols[0].write("🖼 No image available")
                 cols[1].markdown(f"""
@@ -29,6 +29,7 @@ if run_button:
                 - **Current Bid**: {item['current_bid']}
                 - **Bids**: {item['bids']}
                 - **Time Left**: {item['time_left']}
+                - **Closes**: {item['close_time']}
                 """)
             send_alerts(results, extra_email)
         else:

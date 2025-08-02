@@ -12,7 +12,7 @@ def send_alerts(results, extra_email=None):
         recipients.append(extra_email)
 
     body = "\n\n".join([
-        f"{item['title']}\nStore: {item['store']}\nBid: {item['current_bid']} ({item['bids']})\nTime Left: {item['time_left']}\n{item['url']}"
+        f"{item['title']}\nStore: {item['store']}\nBid: {item['current_bid']} ({item['bids']})\nTime Left: {item['time_left']}\nCloses: {item['close_time']}\n{item['url']}"
         for item in results
     ])
 
