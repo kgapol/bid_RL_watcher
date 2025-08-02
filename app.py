@@ -4,7 +4,7 @@ import json
 
 st.title("BidRL Auction Watcher")
 
-with open("stores.json", "r") as f:
+with open("data/stores.json", "r") as f:
     store_list = json.load(f)
 
 st.download_button(
