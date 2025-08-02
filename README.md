@@ -1,15 +1,17 @@
 # BidRL Auction Watcher
 
-Searches all BidRL stores for matching auction items and emails alerts.
+Searches all BidRL stores for matching auctions and emails results.
 
-## Usage
-- Deploy to [Streamlit Cloud](https://streamlit.io/cloud)
-- Add secrets for Gmail in `secrets.toml`
+## Features
+- Keyword search across all stores
+- Image display
+- Bid amount, number of bids, time left
+- Email alerts (to secrets + optional email)
 
-## Required Secrets
+## Required Streamlit Secrets
 ```
 [email]
-smtp_username = "your-email@gmail.com"
+smtp_username = "your@gmail.com"
 smtp_password = "your-app-password"
-to_email = "your-email@gmail.com"
+to_email = "your@gmail.com"
 ```

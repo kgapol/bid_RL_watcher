@@ -1,4 +1,4 @@
 [email]
-smtp_username = "your-email@gmail.com"
+smtp_username = "your@gmail.com"
 smtp_password = "your-app-password"
-to_email = "your-email@gmail.com"
+to_email = "your@gmail.com"
